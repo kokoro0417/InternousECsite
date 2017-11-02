@@ -6,41 +6,155 @@
 <struts>
 	<constant name="struts.devMode" value="true"/>
 
-	<package name="com.internousdev.TestEC.action" extends="struts-default">
+	<package name="com.internousdev.ECsite.action" extends="struts-default">
 
-		<!--////////////////初期画面移動///////////////-->
-		<!-- ロゴクリック -->
-		<action name="HomeBackAction" class="com.internousdev.TestEC.action.SuccessReturn" method="execute">
-			<result name="success">Home.jsp</result>
-			<result name="error">Home.jsp</result>
+		<!--////////////////共通機能///////////////-->
+		<!-- ホーム画面遷移 -->
+		<action name="HomeAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
 		</action>
 
-		<!--////////////////テスト///////////////-->
-		<!-- テストアクション -->
-		<action name="TestAction" class="com.internousdev.TestEC.action.TestAction" method="execute">
-			<result name="success">TestText.jsp</result>
-			<result name="error">TestText.jsp</result>
+		<!--////////////////ヘッダー機能///////////////-->
+		<!-- ログイン・ログイン画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
 		</action>
 
-		<!--////////////////ログイン・ログアウト///////////////-->
-		<!-- 一般/管理者ログイン -->
-		<action name="LoginAction" class="com.internousdev.TestEC.action.LoginAction" method="execute">
-			<result name="success">MainHome.jsp</result>
-			<result name="error">MainHome.jsp</result>
+		<!-- ログアウト・ログイン画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
 		</action>
 
-		<!-- ログアウト -->
-		<action name="LogoutAction" class="com.internousdev.TestEC.action.LoginAction" method="Logout">
-			<result name="success">MainHome.jsp</result>
-			<result name="error">MainHome.jsp</result>
+		<!-- マイページ画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
 		</action>
 
-		<!--////////////////商品検索///////////////-->
-		<!-- 画面上部からの検索 -->
-		<action name="SearchAction" class="com.internousdev.TestEC.action.SearchAction" method="Search">
-			<result name="success">SearchResult.jsp</result>
-			<result name="error">Home.jsp</result>
+		<!-- カート画面遷移 -->
+		<action name="CartAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">Cart.jsp</result>
+			<result name="error">index.jsp</result>
 		</action>
+
+		<!-- 商品一覧・商品一覧画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 商品検索・商品一覧画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////ユーザー登録機能///////////////-->
+		<!-- ユーザー情報入力画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 登録内容確認画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 登録完了画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////ログイン認証機能///////////////-->
+		<!-- パスワード再設定画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- パスワード再設定確認画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////商品一覧機能///////////////-->
+		<!-- 商品詳細画面推移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- カート追加ボタン機能 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////商品情報選択機能///////////////-->
+		<!-- 決済確認画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 宛先情報登録画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 宛先情報登録確認画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 宛先情報登録確認完了ボタン -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////決済完了機能///////////////-->
+		<!-- 決済完了画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
+		<!--////////////////マイページ機能///////////////-->
+		<!-- 商品購入履歴画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 商品購入履歴削除画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+		<!-- 商品購入履歴削除完了画面遷移 -->
+		<action name="TestAction" class="com.internousdev.ECsite.action.SuccessReturn" method="execute">
+			<result name="success">index.jsp</result>
+			<result name="error">index.jsp</result>
+		</action>
+
+
 
 	</package>
 
