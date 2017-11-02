@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"/>
+
+	<package name="com.internousdev.TestEC.action" extends="struts-default">
+
+		<!--////////////////初期画面移動///////////////-->
+		<!-- ロゴクリック -->
+		<action name="HomeBackAction" class="com.internousdev.TestEC.action.SuccessReturn" method="execute">
+			<result name="success">Home.jsp</result>
+			<result name="error">Home.jsp</result>
+		</action>
+
+		<!--////////////////テスト///////////////-->
+		<!-- テストアクション -->
+		<action name="TestAction" class="com.internousdev.TestEC.action.TestAction" method="execute">
+			<result name="success">TestText.jsp</result>
+			<result name="error">TestText.jsp</result>
+		</action>
+
+		<!--////////////////ログイン・ログアウト///////////////-->
+		<!-- 一般/管理者ログイン -->
+		<action name="LoginAction" class="com.internousdev.TestEC.action.LoginAction" method="execute">
+			<result name="success">MainHome.jsp</result>
+			<result name="error">MainHome.jsp</result>
+		</action>
+
+		<!-- ログアウト -->
+		<action name="LogoutAction" class="com.internousdev.TestEC.action.LoginAction" method="Logout">
+			<result name="success">MainHome.jsp</result>
+			<result name="error">MainHome.jsp</result>
+		</action>
+
+		<!--////////////////商品検索///////////////-->
+		<!-- 画面上部からの検索 -->
+		<action name="SearchAction" class="com.internousdev.TestEC.action.SearchAction" method="Search">
+			<result name="success">SearchResult.jsp</result>
+			<result name="error">Home.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
