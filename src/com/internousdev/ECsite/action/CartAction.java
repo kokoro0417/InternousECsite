@@ -1,4 +1,4 @@
-package com.internousdev.ECsite.dao;
+package com.internousdev.ECsite.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
